@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+      <title>Print-Layouts erstellen mit PrintCSS / CSS Paged Media aus HTML/XML und CSS</title>
+      <meta name="keywords" content="XML,HTML,CSS Paged Media, PDF, PrintCSS, Satz-Automation">
+      <meta name="description" content="Erstellung von hochqualitativen PDF Dokumenten auf HTML/XML und CSS via PrintCSS"/>
+      <meta name="author" content="Andreas Jung/ZOPYX">
+      <meta name="copyright" content="Andreas Jung/ZOPYX">
+      <meta property="og:url" content="https://print-css.com"/>
+      <meta property="og:type" content="website" />
+      <meta name="og:title" content="Satz-Automation, Erstellung von hochqualitativen PDF Dokumenten auf HTML/XML und PrintCSS"/>
+      <meta name="og:description" content="Satz-Automation, Erstellung von hochqualitativen PDF Dokumenten auf HTML/XML und PrintCSS"/>
+      <link rel='stylesheet' href='css/baguetteBox.min.css'>
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+   </head>
+   <body>
+      <a id="button"></a>
+      <section class="top section-padding text-center">
+         <div class="container">
+            <div class="col-md-12">
+               <h1 class="text-white fw-bolder">GENERATING HIGH-QUALITY PDF DOCUMENTS</h1>
+               <h1 class="text-white fw-bolder color-top">FROM XML / HTML 5 / CSS 3</h1>
+               <img class="mt-3" src="images/top.png">
+            </div>
+         </div>
+      </section>
+      <section class="mrq">
+         <div class="container">
+            <div>
+               <h1 class="fw-bold color-red">Satz-Automation mit PrintCSS</h1>
+               <h3 class="text-secondary">
+                  PDF Dokumente aus strukturierten Inhalten erstellen — mit Hilfe von PrintCSS gestalten.
+               </h3>
+            </div>
+         </div>
+      </section>
+      <section class="section-padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6">
+                  <h2 class="title">Der PrintCSS Ansatz</h2>
+                  <div class="line"></div>
+                  <p class="fw-bold fs-5">XML/HTML + CSS = PDF</p>
+                  <p>Unsere PDF Lösungen basieren auf dem CSS Paged Media Ansatz (populär "PrintCSS" genannt).
+                     Dabei dienen struktruierte Inhalte wie XML oder semi-strukturierte
+                     Inhalte aus HTML als Grundlage für die Konvertierung. Zur Festlegung
+                     von Design und Layout verwenden wir CSS (Cascading Stylesheets) wie man
+                     diese von der Website-Programmierung her kennt. Der CSS Paged Media Standard
+                     erweitert CSS um Anweisungen, die spezifisch sind für Print-Layouts wie z.B.
+                     den Satzspiegel, Mehrspaltigkeit, linke/rechte Seiten, wiederkehrende
+                     Texte im Kopf- oder Fußbereich etc. Der Vorteil unseres Ansatzes ist, daß
+                     existierende Inhalte direkt wiederverwendet werden können. Das Erstellen von
+                     Print-Layouts kann mit Grundkenntnissen in CSS leicht erlernt werden.
+                     <br>
+                     <br>
+                     Auf unserem Portal
+                     <a href="https://print-css.rocks">Print CSS Rocks</a>
+                     finden Sie mehr zum CSS Paged Media Ansatz.
+                  </p>
+               </div>
+               <div class="col-md-6">
+                  <h2 class="title">Die Tools</h2>
+                  <div class="line"></div>
+                  <div class="row">
+                     <div class="col-md-6">
+                        <p class="fw-bold fs-5">Kommerzielle&nbsp;Tools</p>
+                        <ul class="links-1 paid">
+                           <li><a href="https://princexml.com">PrinceXML <img class="float-end" src="images/right.png" width="20"> </a></li>
+                           <li><a href="https://pdfreactor.com">PDFreactor <img class="float-end" src="images/right.png" width="20"></a></li>
+                           <!--
+                              <li><a href="https://vivliostyle.com">Vivliostyle</a></li>
+                              -->
+                           <li><a href="https://antennahouse.com">Antennahouse <img class="float-end" src="images/right.png" width="20"></a></li>
+                           <li><a href="https://www.speedata.de">Speedata Publisher <img class="float-end" src="images/right.png" width="20"></a></li>
+                           <li><a href="https://www.docraptor.com">Docraptor <img class="float-end" src="images/right.png" width="20"></a></li>
+                        </ul>
+                     </div>
+                     <div class="col-md-6">
+                        <p class="fw-bold fs-5">Freie&nbsp;Tools</p>
+                        <ul class="links-1 free">
+                           <li><a href="https://weasyprint.org">WeasyPrint <img class="float-end" src="images/right-green.png" width="20">
+                              </a>
+                           </li>
+                           <li><a href="https://typeset.sh">Typeset.sh <img class="float-end" src="images/right-green.png" width="20">
+                              </a>
+                           </li>
+                           <li><a href="https://pagedjs.org">Paged.js <img class="float-end" src="images/right-green.png" width="20">
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         </div>
+      </section>
+      <section class="section-padding iframes bg-th">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6 mb-4">
+                  <div class="iframes-main">
+                     <iframe class="w-100" src="https://www.slideshare.net/slideshow/embed_code/key/gkL1cqytPE6CGV" height="400"></iframe>
+                     <div class="iframes-bg pt-2 pb-2">
+                        <strong> <a href="https://www.slideshare.net/ajung/pdf-generierung-mit-xmlhtml-und-css-was-die-tools-knnen-und-was-nicht" title="PDF Generierung mit XML/HTML und CSS - was die Tools können und was nicht." target="_blank">PDF Generierung mit XML/HTML und CSS - was die Tools können und was nicht.</a> </strong> from <strong><a href="https://www.slideshare.net/ajung" target="_blank">Andreas Jung</a></strong>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 mb-4">
+                  <div class="iframes-main">
+                     <iframe class="w-100" src="https://www.slideshare.net/slideshow/embed_code/key/bmHH11fPovVhsa" height="400"></iframe>
+                     <div class="iframes-bg pt-2 pb-2">
+                        <strong> <a href="https://www.slideshare.net/ajung/css-paged-media-a-review-of-tools-and-techniques" title="CSS Paged Media - A review of tools and techniques" target="_blank">CSS Paged Media - A review of tools and techniques</a> </strong> from <strong><a href="https://www.slideshare.net/ajung" target="_blank">Andreas Jung</a></strong>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 mb-4">
+                  <div class="iframes-main">
+                     <iframe class="w-100" src="https://www.slideshare.net/slideshow/embed_code/key/KrSDKknA7nQQUr" height="400"></iframe>
+                     <div class="iframes-bg pt-2 pb-2">
+                        <strong> <a href="https://www.slideshare.net/ajung/printcss-workshop-xmlprague-2020" title="PrintCSS workshop XMLPrague 2020" target="_blank">PrintCSS workshop XMLPrague 2020</a> </strong> from <strong><a href="https://www.slideshare.net/ajung" target="_blank">Andreas Jung</a></strong>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 mb-4">
+                  <div class="iframes-main">
+                     <iframe class="w-100" src="https://www.youtube.com/embed/pltX0yDsSU4" height="400"></iframe>
+                     <div class="iframes-bg pt-2 pb-2">
+                        <strong><a href="https://www.youtube.com/watch?v=gEUnTWW2Lnw">High-quality generation PDF from XML/HTML with CSS Paged Media</a></strong>
+                        from <strong>Andreas Jung</strong>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 mb-4">
+                  <div class="iframes-main">
+                     <iframe class="w-100" src="https://www.youtube.com/embed/gEUnTWW2Lnw" height="400"></iframe>
+                     <div class="iframes-bg pt-2 pb-2">
+                        <strong><a href="https://www.youtube.com/watch?v=gEUnTWW2Lnw">High-quality generation PDF from XML/HTML with CSS Paged Media</a></strong>
+                        from <strong>Andreas Jung</strong>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 mb-4">
+                  <div class="iframes-main">
+                     <iframe class="w-100" src="https://www.youtube.com/embed/G2xcJ_xjAik" height="400"></iframe>
+                     <div class="iframes-bg pt-2 pb-2">
+                        <strong><a href="https://www.youtube.com/watch?v=G2xcJ_xjAik">Mit CSS hochwertige Print-Layouts formatieren (Video Interview)</a></strong>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            </div>
+         </div>
+      </section>
+      <section class="section-padding content">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6 m-auto">
+                  <h2 class="title">Anwendungsfälle</h2>
+                  <div class="line"></div>
+                  <p class="fw-bold fs-5">Wann kann ich PrintCSS verwenden?</p>
+                  <p>Der CSS Paged Media Ansatz kann für verschiedene Arten von Publikationen verwendet werden - sowohl für traditionelle textlastige Dokument aber auch für layout-orientierte Dokumente mittlerer Komplexität.
+                  </p>
+                  <br>
+                  <ul>
+                     <li>Technische Dokumentation</li>
+                     <li>Journals und Papers</li>
+                     <li>Standards, Normen</li>
+                     <li>Flyer, Brochüren, Web-to-Print</li>
+                     <li>u.v.w.m.</li>
+                  </ul>
+               </div>
+               <div class="col-md-6">
+                  <section class="gallery-block grid-gallery">
+                     <div class="container-fluid">
+                        <div class="row">
+                           <div class="col-md-6 col-lg-4 col-6 item">
+                              <a class="lightbox" href="images/slider1.png">
+                              <img class="img-fluid image scale-on-hover" src="images/slider1_thumb.png">
+                              </a>
+                           </div>
+                           <div class="col-md-6 col-lg-4 col-6 item">
+                              <a class="lightbox" href="images/slider2.png">
+                              <img class="img-fluid image scale-on-hover" src="images/slider2_thumb.png">
+                              </a>
+                           </div>
+                           <div class="col-md-6 col-lg-4 col-6 item">
+                              <a class="lightbox" href="images/slider3.png">
+                              <img class="img-fluid image scale-on-hover" src="images/slider3_thumb.png">
+                              </a>
+                           </div>
+                           <div class="col-md-6 col-lg-4 col-6 item">
+                              <a class="lightbox" href="images/slider4.png">
+                              <img class="img-fluid image scale-on-hover" src="images/slider4_thumb.png">
+                              </a>
+                           </div>
+                           <div class="col-md-6 col-lg-4 col-6 item">
+                              <a class="lightbox" href="images/slider5.png">
+                              <img class="img-fluid image scale-on-hover" src="images/slider5_thumb.png">
+                              </a>
+                           </div>
+                           <div class="col-md-6 col-lg-4 col-6 item">
+                              <a class="lightbox" href="images/slider6.png">
+                              <img class="img-fluid image scale-on-hover" src="images/slider6_thumb.png">
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </section>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="section-padding bg-th">
+         <div class="container">
+            <h2 class="title">Unsere Leistungen</h2>
+            <div class="line mb-4"></div>
+            <div class="row">
+               <div class="col-md-6 mb-4">
+                  <div class="card h-100">
+                     <div class="card-body">
+                        <h5 class="card-title fw-bold fs-5 ms-2">Beratung</h5>
+                        <ul>
+                           <li>Wir beraten Sie bei Ihrem PDF Projekt von Anfang bis Ende</li>
+                           <li>Unsere Beratung ist herstellerneutral</li>
+                           <li>Analyse der Layoutanforderungen und Auswahl des geeigneten Tools</li>
+                           <li>Individuelle Schulungen und Hands-on-Training</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 mb-4">
+                  <div class="card h-100">
+                     <div class="card-body">
+                        <h5 class="card-title fw-bold fs-5 ms-2">Implementierung</h5>
+                        <ul>
+                           <li>Erstellung von Templates und Layoutvorlagen gemäß ihrer Projektvorgaben</li>
+                           <li>Integration des PDF Workflows in ihre IT und Systemlandschaft</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="container">
+            <div class="mt-4 ">
+               <h2 class="title">Unsere Publishing Lösungen</h2>
+               <div class="line mb-4"></div>
+               <div class="row">
+                  <div class="col-md-6 mb-4">
+                     <div class="card h-100">
+                        <div class="card-body">
+                           <h5 class="card-title fw-bold fs-5 ms-2">Publishing Lösungen</h5>
+                           <ul>
+                              <li>Wir realisieren maßgeschneiderte Publishing Lösungen, die
+                                 exakt auf die Bedürfnisse unserer Kunden abgestimmt sind.
+                              </li>
+                              <li>Mit Hilfe unseres Baukastensystems <a href="https://www.produce-and-publish.com">Produce
+                                 &amp; Publish</a> können wir jedes Problem die
+                                 exakt passende Lösung realisieren. 
+                              </li>
+                              <li>
+                                 Unsere Komponenten kommen sowohl aus dem Open-Source Bereich als auch aus
+                                 dem Bereich der kommerziellen Komponenten. Wir haben für jedes Problem
+                                 und jedes Budget die genau passende Lösung.
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                     <div class="card h-100">
+                        <div class="card-body">
+                           <h5 class="card-title fw-bold fs-5 ms-2">Web/XML Content-Management</h5>
+                           <ul>
+                              <li>Wir realisieren seit 2002 Web-CMS Lösungen - meistens auf Basis des CMS <a href="https://plone.org">Plone</a>.
+                              </li>
+                              <li>Zur Realisierung professioneller Publishinglösungen stellen wir unser Tool <a href="https://xml-director.info">XML Director</a> als freie Software bereit. XML Director realisiert die Anbindung an beliebige XML Datenbank, Cloud Storage etc. und verfügt über Schnittstellen zu Konvertierungsdiensten wie <a href="https://c-rex.net">C-REX</a>.
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="section-padding">
+         <div class="container">
+            <div class="row justify-content-center">
+               <div class="col-md-9 bg-dark rounded p-5">
+                  <div class="row">
+                     <div class="col-md-4 text-center">
+                        <img class="w-100 owner-img" src="images/andreasjung-rounded.png">
+                        <p class="mb-0 fw-bold mt-2 text-white" class="fw-bold">Andreas Jung</p>
+                        <p class="mb-0 text-white">Chef-Entwickler und</p>
+                        <p class="mb-0 text-white">Creative Guru</p>
+                     </div>
+                     <div class="col-md-8">
+                        <p class="text-white">Wir beantworten gerne Ihren Fragen und analysieren gemeinsam mit ihnen Ihre Anforderungen im Bereich Publishing.</p>
+                        <p class="text-white">25 Jahre Expertise im Bereich Electronic Publishing,
+                           16 Jahre Expertise im Bereich automatisierter PDF Erzeugung.
+                        </p>
+                        <p class="text-white">Wir versuchen stets die für Sie beste und kostengünstigste Lösung zu finden.</p>
+                        <hr>
+                        <div class="row">
+                           <div class="col-md-6">
+                              <p class="mb-0 info text-white">
+                                 <img class="me-2" src="images/phone-call.png" width="20">
+                                 <a class="text-white" href="tel:+49 7071 793376">+49 7071 793376</a>
+                              </p>
+                              <p class="mb-0 info text-white">
+                                 <img class="me-2" src="images/email.png" width="20">
+                                 <a class="text-white" href="mailto:info@zopyx.com">info@zopyx.com</a>
+                              </p>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="info">
+                                 <p class="mb-0 info text-white">
+                                    <img class="me-2" src="images/location.png" width="20">
+                                    <a class="text-white" href="">Hundskapfklinge 33<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    D-72074 Tübingen</a>
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-12 text-center mt-5">
+               <a href="https://zopyx.com/"target="_blank"><img class="link" src="images/link_1.png"></a>
+            </div>
+         </div>
+      </section>
+      <footer class="bg-dark p-4">
+         <div class="container">
+            <div class="col-md-12 text-center">
+               <p class="text-white mb-0">
+                   © 2023, ZOPYX | <a class="text-white" href="https://zopyx.com">www.zopyx.com</a>  | <a class="text-white" href="https://zopyx.com/imprint">Impressum</a>
+               </p>
+            </div>
+         </div>
+      </footer>
+      <script src='js/jquery.min.js'></script>
+      <script src='js/baguetteBox.min.js'></script>
+      <script>
+         baguetteBox.run('.grid-gallery', {
+         animation: 'slideIn'
+         });
+      </script>
+      <script>
+         var btn = $('#button');
+         
+         $(window).scroll(function() {
+         if ($(window).scrollTop() > 300) {
+         btn.addClass('show');
+         } else {
+         btn.removeClass('show');
+         }
+         });
+         
+         btn.on('click', function(e) {
+         e.preventDefault();
+         $('html, body').animate({scrollTop:0}, '300');
+         });
+      </script>
+   </body>
+</html>
