@@ -19,6 +19,7 @@
     <link rel='stylesheet' href='css/baguetteBox.min.css'>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/iframemanager.css">
 </head>
 
 <body>
@@ -124,7 +125,7 @@
                 </div>
                 <div class="col-md-6 mb-4">
                     <div class="iframes-main h-100">
-                        <iframe class="w-100" src="https://www.youtube.com/embed/pltX0yDsSU4" height="400"></iframe>
+                        <div class="w-100" data-service="youtube" data-id="pltX0yDsSU4"></div>
                         <div class="iframes-bg pt-2 pb-2">
                             <strong><a href="https://www.youtube.com/watch?v=gEUnTWW2Lnw">High-quality generation PDF from XML/HTML with CSS Paged Media</a></strong> from <strong>Andreas Jung</strong>
                         </div>
@@ -132,7 +133,7 @@
                 </div>
                 <div class="col-md-6 mb-4">
                     <div class="iframes-main h-100">
-                        <iframe class="w-100" src="https://www.youtube.com/embed/gEUnTWW2Lnw" height="400"></iframe>
+                        <div class="w-100" data-service="youtube" data-id="gEUnTWW2Lnw"></div>
                         <div class="iframes-bg pt-2 pb-2">
                             <strong><a href="https://www.youtube.com/watch?v=gEUnTWW2Lnw">High-quality generation PDF from XML/HTML with CSS Paged Media</a></strong> from <strong>Andreas Jung</strong>
                         </div>
@@ -140,7 +141,7 @@
                 </div>
                 <div class="col-md-6 mb-4">
                     <div class="iframes-main h-100">
-                        <iframe class="w-100" src="https://www.youtube.com/embed/G2xcJ_xjAik" height="400"></iframe>
+                        <div class="w-100" data-service="youtube" data-id="G2xcJ_xjAik"></div>
                         <div class="iframes-bg pt-2 pb-2">
                             <strong><a href="https://www.youtube.com/watch?v=G2xcJ_xjAik">Mit CSS hochwertige Print-Layouts formatieren (Video Interview)</a></strong>
                         </div>
@@ -336,6 +337,7 @@
             </div>
         </div>
     </footer>
+    <script src='js/iframemanager.js'></script>
     <script src='js/jquery.min.js'></script>
     <script src='js/baguetteBox.min.js'></script>
     <script>
@@ -343,6 +345,37 @@
             animation: 'slideIn'
         });
     </script>
+        <script>
+    window.addEventListener('load', function(){
+
+        var manager = iframemanager();
+
+        // Example with youtube embed
+        manager.run({
+            currLang: 'en',
+            services : {
+                youtube : {
+                    embedUrl: 'https://www.youtube-nocookie.com/embed/{data-id}',
+                    thumbnailUrl: 'https://i3.ytimg.com/vi/{data-id}/hqdefault.jpg',
+                    iframe : {
+                        allow : 'accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen;',
+                    },
+                    cookie : {
+                        name : 'cc_youtube'
+                    },
+                    languages : {
+                        en : {
+                            notice: 'This content is hosted by a third party. By showing the external content you accept the <a rel="noreferrer" href="https://www.youtube.com/t/terms" title="Terms and conditions" target="_blank">terms and conditions</a> of youtube.com.',
+                            loadBtn: 'Load video',
+                            loadAllBtn: 'Don\'t ask again'
+                        }
+                    }
+                }
+            }
+        });
+    });
+  </script>
+
     <script>
         var btn = $('#button');
 
