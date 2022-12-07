@@ -345,54 +345,54 @@
             animation: 'slideIn'
         });
     </script>
-        <script>
+    <script>
     window.addEventListener('load', function(){
 
-        var manager = iframemanager();
+    var manager = iframemanager();
 
-        // Example with youtube embed
-        manager.run({
-            currLang: 'en',
-            services : {
-slideshare: {
-            embedUrl: 'https://www.slideshare.net/slideshow/embed_code/key/{data-id}',
-            iframe: {
-                frameborder: '0',
-                allowfullscreen: '',
-                scrolling: 'no',
-            },
-            cookie : {
-                name : 'cc_slideshare'
-            },
-            languages : {
-                en : {
-                    notice: 'This content is hosted by a third party. By showing the external content you accept the <a rel="noreferrer" href="hhttps://www.slideshare.net/terms" title="Terms and conditions" target="_blank">terms and conditions</a> of slideshare.net.',
-                    loadBtn: 'Load slide',
-                    loadAllBtn: "Don't ask again"
+    // Example with youtube embed
+    manager.run({
+        currLang: 'en',
+        services : {
+            slideshare: {
+                embedUrl: 'https://www.slideshare.net/slideshow/embed_code/key/{data-id}',
+                iframe: {
+                    frameborder: '0',
+                    allowfullscreen: '',
+                    scrolling: 'no',
+                },
+                cookie : {
+                    name : 'cc_slideshare'
+                },
+                languages : {
+                    en : {
+                        notice: 'This content is hosted by a third party. By showing the external content you accept the <a rel="noreferrer" href="hhttps://www.slideshare.net/terms" title="Terms and conditions" target="_blank">terms and conditions</a> of slideshare.net.',
+                        loadBtn: 'Load slides',
+                        loadAllBtn: "Don't ask again"
+                    }
                 }
-            }
-        },                        
-                youtube : {
-                    embedUrl: 'https://www.youtube-nocookie.com/embed/{data-id}',
-                    thumbnailUrl: 'https://i3.ytimg.com/vi/{data-id}/hqdefault.jpg',
-                    iframe : {
-                        allow : 'accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen;',
-                    },
-                    cookie : {
-                        name : 'cc_youtube'
-                    },
-                    languages : {
-                        en : {
-                            notice: 'This content is hosted by a third party. By showing the external content you accept the <a rel="noreferrer" href="https://www.youtube.com/t/terms" title="Terms and conditions" target="_blank">terms and conditions</a> of youtube.com.',
-                            loadBtn: 'Load video',
-                            loadAllBtn: 'Don\'t ask again'
-                        }
+            },                        
+            youtube : {
+                embedUrl: 'https://www.youtube-nocookie.com/embed/{data-id}',
+                thumbnailUrl: 'https://i3.ytimg.com/vi/{data-id}/hqdefault.jpg',
+                iframe : {
+                    allow : 'accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen;',
+                },
+                cookie : {
+                    name : 'cc_youtube'
+                },
+                languages : {
+                    en : {
+                        notice: 'This content is hosted by a third party. By showing the external content you accept the <a rel="noreferrer" href="https://www.youtube.com/t/terms" title="Terms and conditions" target="_blank">terms and conditions</a> of youtube.com.',
+                        loadBtn: 'Load video',
+                        loadAllBtn: 'Don\'t ask again'
                     }
                 }
             }
-        });
+        }
     });
-  </script>
+});
+</script>
 
     <script>
         var btn = $('#button');
