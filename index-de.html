@@ -98,28 +98,31 @@
     </section>
     <section class="section-padding iframes bg-th">
         <div class="container">
+            <h2 class="title">Vorträge und Videos von Andreas Jung</h2>
+            <div class="line"></div>
+
             <div class="row">
                 <div class="col-md-6 mb-4">
                     <div class="iframes-main h-100">
-                        <iframe class="w-100" src="https://www.slideshare.net/slideshow/embed_code/key/gkL1cqytPE6CGV" height="400"></iframe>
+                        <div class="w-100" data-service="slideshare" data-id="gkL1cqytPE6CGV"></div>
                         <div class="iframes-bg pt-2 pb-2">
-                            <strong> <a href="https://www.slideshare.net/ajung/pdf-generierung-mit-xmlhtml-und-css-was-die-tools-knnen-und-was-nicht" title="PDF Generierung mit XML/HTML und CSS - was die Tools können und was nicht." target="_blank">PDF Generierung mit XML/HTML und CSS - was die Tools können und was nicht.</a> </strong>                            from <strong><a href="https://www.slideshare.net/ajung" target="_blank">Andreas Jung</a></strong>
+                            <strong> <a href="https://www.slideshare.net/ajung/pdf-generierung-mit-xmlhtml-und-css-was-die-tools-knnen-und-was-nicht" title="PDF Generierung mit XML/HTML und CSS - was die Tools können und was nicht." target="_blank">PDF Generierung mit XML/HTML und CSS - was die Tools können und was nicht.</a> </strong> 
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 mb-4">
                     <div class="iframes-main h-100">
-                        <iframe class="w-100" src="https://www.slideshare.net/slideshow/embed_code/key/bmHH11fPovVhsa" height="400"></iframe>
+                        <div class="w-100" data-service="slideshare" data-id="bmHH11fPovVhsa"></div>
                         <div class="iframes-bg pt-2 pb-2">
-                            <strong> <a href="https://www.slideshare.net/ajung/css-paged-media-a-review-of-tools-and-techniques" title="CSS Paged Media - A review of tools and techniques" target="_blank">CSS Paged Media - A review of tools and techniques</a> </strong>                            from <strong><a href="https://www.slideshare.net/ajung" target="_blank">Andreas Jung</a></strong>
+                            <strong> <a href="https://www.slideshare.net/ajung/css-paged-media-a-review-of-tools-and-techniques" title="CSS Paged Media - A review of tools and techniques" target="_blank">CSS Paged Media - A review of tools and techniques</a> </strong>                           
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 mb-4">
                     <div class="iframes-main h-100">
-                        <iframe class="w-100" src="https://www.slideshare.net/slideshow/embed_code/key/KrSDKknA7nQQUr" height="400"></iframe>
+                        <div class="w-100" data-service="slideshare" data-id="KrSDKknA7nQQUr"></div>
                         <div class="iframes-bg pt-2 pb-2">
-                            <strong> <a href="https://www.slideshare.net/ajung/printcss-workshop-xmlprague-2020" title="PrintCSS workshop XMLPrague 2020" target="_blank">PrintCSS workshop XMLPrague 2020</a> </strong> from <strong><a href="https://www.slideshare.net/ajung" target="_blank">Andreas Jung</a></strong>
+<strong> <a href="https://www.slideshare.net/ajung/printcss-workshop-xmlprague-2020" title="PrintCSS workshop XMLPrague 2020" target="_blank">PrintCSS workshop XMLPrague 2020</a><br/> </strong> 
                         </div>
                     </div>
                 </div>
@@ -127,7 +130,7 @@
                     <div class="iframes-main h-100">
                         <div class="w-100" data-service="youtube" data-id="pltX0yDsSU4"></div>
                         <div class="iframes-bg pt-2 pb-2">
-                            <strong><a href="https://www.youtube.com/watch?v=gEUnTWW2Lnw">High-quality generation PDF from XML/HTML with CSS Paged Media</a></strong> from <strong>Andreas Jung</strong>
+                            <strong><a href="https://www.youtube.com/watch?v=gEUnTWW2Lnw">High-quality generation PDF from XML/HTML with CSS Paged Media</a></strong> 
                         </div>
                     </div>
                 </div>
@@ -135,7 +138,7 @@
                     <div class="iframes-main h-100">
                         <div class="w-100" data-service="youtube" data-id="gEUnTWW2Lnw"></div>
                         <div class="iframes-bg pt-2 pb-2">
-                            <strong><a href="https://www.youtube.com/watch?v=gEUnTWW2Lnw">High-quality generation PDF from XML/HTML with CSS Paged Media</a></strong> from <strong>Andreas Jung</strong>
+                            <strong><a href="https://www.youtube.com/watch?v=gEUnTWW2Lnw">High-quality generation PDF from XML/HTML with CSS Paged Media</a></strong> 
                         </div>
                     </div>
                 </div>
@@ -354,6 +357,24 @@
         manager.run({
             currLang: 'en',
             services : {
+slideshare: {
+            embedUrl: 'https://www.slideshare.net/slideshow/embed_code/key/{data-id}',
+            iframe: {
+                frameborder: '0',
+                allowfullscreen: '',
+                scrolling: 'no',
+            },
+            cookie : {
+                name : 'cc_slideshare'
+            },
+            languages : {
+                en : {
+                    notice: 'This content is hosted by a third party. By showing the external content you accept the <a rel="noreferrer" href="hhttps://www.slideshare.net/terms" title="Terms and conditions" target="_blank">terms and conditions</a> of slideshare.net.',
+                    loadBtn: 'Load slide',
+                    loadAllBtn: "Don't ask again"
+                }
+            }
+        },                        
                 youtube : {
                     embedUrl: 'https://www.youtube-nocookie.com/embed/{data-id}',
                     thumbnailUrl: 'https://i3.ytimg.com/vi/{data-id}/hqdefault.jpg',
