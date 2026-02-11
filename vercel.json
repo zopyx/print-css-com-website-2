@@ -13,7 +13,8 @@
     {"source": "/en", "destination": "/en/index.html"},
     {"source": "/de", "destination": "/de/index.html"},
     {"source": "/en/", "destination": "/en/index.html"},
-    {"source": "/de/", "destination": "/de/index.html"}
+    {"source": "/de/", "destination": "/de/index.html"},
+    {"source": "/", "destination": "/en/index.html"}
   ],
   "redirects": [
     {"source": "/index-en.html", "destination": "/en/", "permanent": true},
