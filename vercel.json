@@ -2,19 +2,15 @@
   "rewrites": [
     {
       "source": "/",
-      "destination": "/de/index.html",
+      "destination": "/de",
       "has": [{"type": "host", "value": "print-css.de"}]
     },
     {
       "source": "/",
-      "destination": "/en/index.html",
+      "destination": "/en",
       "has": [{"type": "host", "value": "(www\\.)?print-css\\.com"}]
     },
-    {"source": "/en", "destination": "/en/index.html"},
-    {"source": "/de", "destination": "/de/index.html"},
-    {"source": "/en/", "destination": "/en/index.html"},
-    {"source": "/de/", "destination": "/de/index.html"},
-    {"source": "/", "destination": "/en/index.html"}
+    {"source": "/", "destination": "/en"}
   ],
   "redirects": [
     {"source": "/index-en.html", "destination": "/en/", "permanent": true},
