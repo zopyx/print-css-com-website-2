@@ -1,0 +1,41 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/de/index.html",
+      "has": [{"type": "host", "value": "print-css.de"}]
+    },
+    {
+      "source": "/",
+      "destination": "/en/index.html",
+      "has": [{"type": "host", "value": "(www\\.)?print-css\\.com"}]
+    },
+    {"source": "/en", "destination": "/en/index.html"},
+    {"source": "/de", "destination": "/de/index.html"},
+    {"source": "/en/", "destination": "/en/index.html"},
+    {"source": "/de/", "destination": "/de/index.html"}
+  ],
+  "redirects": [
+    {"source": "/index-en.html", "destination": "/en/", "permanent": true},
+    {"source": "/index-de.html", "destination": "/de/", "permanent": true},
+    {"source": "/index-de2.html", "destination": "/de/", "permanent": true}
+  ],
+  "headers": [
+    {
+      "source": "/en/(.*)",
+      "headers": [
+        {"key": "Content-Language", "value": "en"},
+        {"key": "Link", "value": "<https://print-css.com/en/>; rel=\"canonical\""}
+      ]
+    },
+    {
+      "source": "/de/(.*)",
+      "headers": [
+        {"key": "Content-Language", "value": "de"},
+        {"key": "Link", "value": "<https://print-css.de/de/>; rel=\"canonical\""}
+      ]
+    }
+  ],
+  "cleanUrls": true,
+  "trailingSlash": true
+}
